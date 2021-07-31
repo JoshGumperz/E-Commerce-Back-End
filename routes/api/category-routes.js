@@ -54,7 +54,7 @@ router.put('/:id', async (req, res) => {
     });
 
     if (categoryData[0] === 0) {
-      res.status(404).json({ message: 'No Tag found with that id!' });
+      res.status(404).json({ message: 'No category found with that id!' });
       return;
     }
     res.status(200).json(categoryData);
